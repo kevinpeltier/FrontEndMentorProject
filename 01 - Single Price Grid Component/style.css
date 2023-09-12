@@ -1,0 +1,152 @@
+/* Generl */
+* {
+    font-family: "karla";
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    font-family: inherit;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    margin-top: 100px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 680px;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Join Section */
+
+
+.join-section {
+    background-color: white;
+    grid-column: span 2;
+    padding: 50px 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    line-height: 1.5rem;
+}
+
+.join-section h1 {
+    color: hsl(218, 22%, 67%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+
+.join-section h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+}
+
+.join-section p {
+    color: hsl(218, 22%, 67%);
+}
+
+
+/* Sub Section */
+
+
+.sub-section {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-section h2 {
+    padding-bottom: 25px;
+    font-weight: 700;
+}
+
+
+.dollar-bold {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.grey-dollar {
+    color: hsl(218, 22%, 67%);
+    padding-left: 10px;
+    text-align: center;
+}
+
+.sub-section p {
+    padding-bottom: 10px;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+/* Why Us Section  */
+
+.why-us-section {
+    background-color: #4abebd;
+    border-bottom-right-radius: 10px;
+    color: white;
+    padding: 40px;
+}
+
+.why-us-section h2 {
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.why-us-section ul li {
+    line-height: 1.3rem;
+
+}
+
+
+/* Maximum width */
+
+@media (max-width: 600px) {
+
+* {
+    /* margin: 2%; */
+}
+
+    .grid-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sub-section {
+        border-bottom-left-radius: 0px;
+    }
+
+    .why-us-section {
+        border-bottom-left-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+  }
+  
